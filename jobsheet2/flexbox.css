@@ -1,0 +1,39 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-image: url("img/field1.png");
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
+    line-height: 1.65;
+    padding-bottom: 1000px;
+}
+.sidebar-satu{
+    width: 750px;
+    height: 500px;
+    padding: 20px;
+    background-color: cyan;
+}
+.sidebar-dua{
+    width: 1000px;
+    height: 500px;
+    background-color: palegreen;
+    padding: 20px;
+}
+.kolom-utama{
+    width: 2500px;
+    height: 500px;
+    padding: 20px;
+    background-color: blanchedalmond;
+}
+.container-satu {
+    width: 1000px;
+    height: 700px;
+    margin: 50px auto;
+    background-color: gainsboro;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    border-radius: 20px;
+}
