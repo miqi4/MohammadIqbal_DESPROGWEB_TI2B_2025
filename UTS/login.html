@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Task Manager</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #56537e;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        .login-container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 50px 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 450px;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+
+        .title {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+            animation: slideInLeft 0.5s ease-out both;
+        }
+
+        .form-group:nth-child(1) {
+            animation-delay: 0.4s;
+        }
+
+        .form-group:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+
+        .form-group:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 14px 16px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 15px;
+            font-family: 'Courier New', Courier, monospace;
+            transition: all 0.3s ease;
+            background: #fff;
+            outline: none;
+        }
+        input[type="text"]:focus,
+        input[type="email"]:focus {
+            border-color: #667eea;
+            transform: translateY(-2px);
+        }
+        .button-container {
+            margin-top: 10px;
+            animation: fadeIn 0.8s ease-out 0.7s both;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 16px;
+            background-color: #666;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        input[type="submit"]:hover {
+            background-color: rgb(51, 33, 94);
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <div class="title">Masukkan data mahasiswa </div>
+        <form method="post" action="uts.php">
+            <div class="form-group">
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" name="nama" id="nama" placeholder="Masukkan nama lengkap" required>
+            </div>
+            <div class="form-group">
+                <label for="kelas">Kelas</label>
+                <input type="text" name="kelas" id="kelas" placeholder="Contoh: TI-2B" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="email@example.com" required>
+            </div>
+            <div class="button-container">
+                <input type="submit" name="submit" value="Masuk ke Dashboard">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
