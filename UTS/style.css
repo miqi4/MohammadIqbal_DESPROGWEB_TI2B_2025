@@ -1,0 +1,75 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5% 20%;
+}
+.outer{
+    padding: 2% 0;
+    height: 1050px;
+    border-radius:15px;
+    background: url();
+    background-repeat: no-repeat;
+    border: 3px solid black;
+    background-color: rgb(136, 148, 159);
+}
+.biodata{
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    width: 91%;
+    height: 90px;
+    border-radius: 10px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    box-shadow: 8px 8px #413d3d;
+    margin-bottom: 30px;
+    padding: 2%;
+}
+.dashboard{
+    opacity: 85%;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    width: 95%;
+    height: 80px;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    box-shadow: 8px 8px #413d3d;
+}
+
+.form{
+    margin: 20px auto;
+    display: flex;
+    width: 97%;
+}
+.input{
+    opacity: 85%;
+    width: 85%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    text-align: center;
+    padding: 1px;
+    margin: auto 10px;
+    color: rgb(0, 0, 0);
+    box-shadow: 8px 8px #413d3d;
+}
+
+.comment{
+    opacity: 85%;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    width: 85%;
+    height: 65%;
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    box-shadow: 8px 8px #413d3d;
+    padding: 5%;
+}
+table{
+    width: 100%;
+}
+thead{
+    background-color: rgb(115, 115, 115);
+}
+
